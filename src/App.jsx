@@ -9,6 +9,7 @@ const ASSETS = "/assets/";
 ========================================== */
 
 const CONTACT_DETAILS = {
+  phones: ["+919626261331", "+919442053705"],
   phone: "+919626261331",
   whatsapp: "919626261331",
   address: "G9R6+C37, Karim Saibu St, Bargur, Tamil Nadu 635104",
@@ -17,9 +18,6 @@ const CONTACT_DETAILS = {
   instagramUrl: "",
   facebookUrl: "",
 };
-
-const getWhatsAppLink = () =>
-  `https://wa.me/${CONTACT_DETAILS.whatsapp.replace(/\D/g, "")}`;
 
 /* ==========================================
    FOOD CONTENT
@@ -1542,6 +1540,10 @@ function ClassicFooter({ onHome, onBack }) {
 
         <div className="classic-footer-column">
           <h3>CONTACT</h3>
+
+          <a href="tel:+919442053705">
+            +91 94420 53705
+          </a>
 
           <a href={`tel:${CONTACT_DETAILS.phone}`}>
             +91 96262 61331
