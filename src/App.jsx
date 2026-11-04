@@ -20,6 +20,14 @@ const CONTACT_DETAILS = {
 };
 
 /* ==========================================
+   WHATSAPP LINK
+========================================== */
+
+const getWhatsAppLink = () => {
+  return `https://wa.me/${CONTACT_DETAILS.whatsapp}`;
+};
+
+/* ==========================================
    FOOD CONTENT
 ========================================== */
 
